@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">Calculadora</string>
+    <string name="app_name">Calculadora de Propinas</string>
+    <string name="titulo_app">Calculadora de Propinas</string>
+    <string name="error_monto_invalido">Ingrese un monto válido mayor a 0</string>
+
+    <string name="label_monto">Monto de la cuenta</string>
+    <string name="simbolo_moneda">$</string>
+
+    <string name="label_porcentaje">Porcentaje de propina: %1$d%%</string>
+    <string name="chip_10">10%</string>
+    <string name="chip_15">15%</string>
+    <string name="chip_20">20%</string>
+
+    <string name="label_personas">Número de personas</string>
+    <string name="btn_menos">−</string>
+    <string name="btn_mas">+</string>
+
+    <string name="label_redondear">Redondear el total</string>
+
+    <string name="titulo_resultados">Resumen de pago</string>
+    <string name="label_propina_total">Propina total:</string>
+    <string name="label_total_cuenta">Total con propina:</string>
+    <string name="label_por_persona">Total por persona:</string>
+    <string name="formato_moneda">$%1$.2f</string>
+
+    <string name="btn_limpiar">Limpiar datos</string>
 </resources>
