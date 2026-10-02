@@ -1,6 +1,7 @@
 package com.example.calculadora.ui.theme
 
 import android.app.Activity
+import android.graphics.ColorMatrixColorFilter
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -18,7 +19,7 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
+    primary = androidx.compose.ui.graphics.Color(0xFF4CAF50),
     secondary = PurpleGrey40,
     tertiary = Pink40
 
@@ -36,7 +37,6 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun CalculadoraTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {

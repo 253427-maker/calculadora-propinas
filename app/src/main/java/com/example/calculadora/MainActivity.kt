@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            CalculadoraTheme {
+            MaterialTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     val viewModel: PropinaViewModel = viewModel()
                     val state by viewModel.uiState.collectAsStateWithLifecycle()
@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// 1. Composable principal con toda la estructura de la pantalla
+// composable principal, para mostrar toda la estructura de la pantalla
 @Composable
 fun PantallaPropinas(
     state: PropinaUiState,
@@ -129,7 +129,7 @@ fun PantallaPropinas(
     }
 }
 
-// 2. Composable para la entrada del monto de la cuenta
+// composable para la entrada del monto (de la cuenta)
 @Composable
 fun CampoMonto(
     monto: String,
@@ -149,7 +149,7 @@ fun CampoMonto(
     )
 }
 
-// 3. Composable para seleccionar el porcentaje con Slider y FilterChips
+// composable para seleccionar el porcentaje con el slider y filterChips
 @Composable
 fun SelectorPorcentaje(
     porcentaje: Float,
@@ -191,7 +191,7 @@ fun SelectorPorcentaje(
     }
 }
 
-// 4. Composable para seleccionar el número de personas
+// composable para seleccionar el núm de personas
 @Composable
 fun SelectorPersonas(
     personas: Int,
@@ -229,7 +229,7 @@ fun SelectorPersonas(
     }
 }
 
-// 5. Composable que muestra el desglose de resultados en una Card dinámica
+// composable que muestra el desglose de resultados (en una Card dinámica) >.<
 @Composable
 fun Resultados(
     state: PropinaUiState,
